@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ".:/app_name"
+      - ".:/usr/src/app_name"
     depends_on:
       - db
     environment:
