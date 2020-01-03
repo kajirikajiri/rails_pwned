@@ -16,4 +16,8 @@ test:
 
 production:
   <<: *default
-  database: my_app_production
+  username: <%= ENV['MYSQL_USER'] %>
+  password: <%= ENV['MYSQL_ROOT_PASSWORD'] %>
+  database: <%= ENV['MYSQL_DATABASE'] %>
+  host: <%= ENV['MYSQL_HOST'] %>
+  socket: <%= ENV['MYSQL_SOCKET'] %>
